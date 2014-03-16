@@ -1,6 +1,4 @@
 """An user interface that allows user to directly change Houdini parameter callback script.
-   An user interface, based on Houdini native UI script, that allows user to edit/rewrite 
-   Houdini parameter callback script without opening "Edit Parameter Interface" window.
 """
 
 import sys, os
