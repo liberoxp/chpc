@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
+
 """An user interface that allows user to directly change Houdini parameter callback script.
 """
 
 import sys, os
-
 import hou
 
 gUI_FILE = '%s.ui' % os.path.splitext(__file__)[0]
