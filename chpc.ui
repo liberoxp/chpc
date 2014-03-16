@@ -1,0 +1,96 @@
+#define LABEL_WIDTH 1.5
+
+menu_lang.val = SELECT_MENU
+{
+    "Hscript"
+    "Python"
+}
+
+dlg.gad = DIALOG "Change Parameter Callback Script"
+{
+    LAYOUT(vertical) STRETCH MARGIN(0.1) SPACING(0.1) LOOK(plain) SIZE(15,1) VALUE(dialog.val)
+
+    # Setup gadgets for "Get copied parameter info" button.
+    {
+        LAYOUT(horizontal) HSTRETCH
+        {
+            LAYOUT(vertical) JUSTIFY(right,center)
+            LABEL "                      ";
+        }
+        {
+            LAYOUT(horizontal) JUSTIFY(right,center) HSTRETCH
+            LABEL "Tip01  :  If  \"Target  Parameter\"  is  empty,  just  copy  a  parameter  and  press  the  this  button  >>  ";
+	    ACTION_BUTTON "Get  parameter  callback  info" VALUE(btn_getParmCallback.val);
+        } 
+    }
+   
+    # Setup gadgets for "" labels.
+    {
+        LAYOUT(horizontal) HSTRETCH
+        {
+            LAYOUT(vertical) JUSTIFY(right,center)
+            LABEL "                      ";
+        }
+        {
+            LAYOUT(horizontal) JUSTIFY(left,center) HSTRETCH
+            LABEL "Target  parameter  :  ";
+            STRING_FIELD " " VALUE(strField_tarParm.val) HSTRETCH;
+        } 
+    }
+
+    # Setup gadgets for old script.
+    {
+        LAYOUT(horizontal) HSTRETCH
+        {
+            LAYOUT(vertical) JUSTIFY(right,center)
+            LABEL "Old  script  ";
+        }
+        {
+            LAYOUT(vertical) JUSTIFY(left,center) HSTRETCH
+            STRING_FIELD "  " HSTRETCH VALUE(strField_oldScript.val);
+        } 
+    }
+
+    SEPARATOR;
+
+    # Setup gadgets for new script.
+    {
+        LAYOUT(horizontal) HSTRETCH
+        {
+            LAYOUT(vertical) JUSTIFY(right,center)
+            LABEL "New  script ";
+        }
+        {
+            LAYOUT(horizontal) JUSTIFY(left,center) HSTRETCH
+            STRING_FIELD " " HSTRETCH VALUE(strField_newScript.val);
+            SELECT_MENU_BUTTON MENU(menu_lang.val);
+        } 
+    }
+
+    # 
+    {
+        LAYOUT(horizontal) HSTRETCH
+        {
+            LAYOUT(vertical) JUSTIFY(right,center)
+            LABEL "                      ";
+        }
+        {
+            LAYOUT(horizontal) JUSTIFY(right,center) HSTRETCH
+        LABEL "Tip02  :  For  continuing  to  setup  another  parameter,  just  copy  the  parameter  press  the  \"Get  parameter  callback  info\"  button  above." HSTRETCH;
+        } 
+    }
+  
+    # Setup gadgets for "Change" and "Close" buttons.
+    {
+        LAYOUT(horizontal) HSTRETCH
+        {
+            LAYOUT(vertical) JUSTIFY(right,center)
+            LABEL "                      ";
+        }
+        {
+            LAYOUT(horizontal) JUSTIFY(left,center) HSTRETCH
+	    ACTION_BUTTON "Change" VALUE(btn_change.val);
+	    ACTION_BUTTON "Close" SENDS(0) VALUE(dialog.val);
+        } 
+    }
+}
