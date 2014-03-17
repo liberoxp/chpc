@@ -47,7 +47,7 @@ Once the **New script** text field and the **Language** drop-down menu are all s
 
 ![new_script_and_change_button](https://raw.github.com/liberoxp/chpc/master/pic/new_script_and_change_button.png)
 
-If you left the **New script** text field empty and press **Change** button, another warning message will pop-up. 
+If you left the **New script** text field empty and pressed **Change** button, another warning message will pop-up. 
 
 ![empty_script](https://raw.github.com/liberoxp/chpc/master/pic/empty_script.png)
 
