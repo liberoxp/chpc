@@ -7,7 +7,7 @@ CHPC
 
 System requirements
 -------------------
-This tool needs Python2.6 or later to run and has been tested well under Mac OSX Mavericks, Houdini13.0.314
+This tool needs Python2.6 or later to run and has been tested well in Houdini13.0.314 for Mac OSX(Mavericks).
 
 This tool won't deal any thing with local file system, and since it is based on Houdini native ui script, it should be able to work on either Windows or Linux.
 
