@@ -30,7 +30,7 @@ One can write a shelf tool with this code snippet to get a straight forward sens
 
 How to get it work on my nodes?
 -------------------------------
-Simply just choose a parameter and copy it(to parameter clipboard), then execute this tool.
+Simply just choose a parameter(may have a callback script written or need to add callback script) and copy it(to parameter clipboard), then execute this tool.
 
 ![copy_parameter](https://raw.github.com/liberoxp/chpc/master/pic/copy_parameter.png)
 
