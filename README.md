@@ -26,7 +26,7 @@ Once this tool can be found in the Python search paths, the simplest way to use 
 import chpc
 chpc.start()
 ```
-One can write a shelf tool button with this code snippet to get a straight forward sense of using it.
+One can write a shelf tool with this code snippet to get a straight forward sense of using it.
 
 How to get it work on my nodes?
 -------------------------------
