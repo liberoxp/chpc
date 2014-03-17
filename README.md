@@ -1,7 +1,7 @@
 CHPC
 ====
 
-**C**hange **H**oudini **P**arameter **C**allback is a tool that allows Houdini user to add/edit/rewrite parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time searching parameter.
+**C**hange **H**oudini **P**arameter **C**allback is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time searching parameter.
 
 ![chpc_gui](https://raw.github.com/liberoxp/chpc/master/pic/chpc_main_window.png)
 
