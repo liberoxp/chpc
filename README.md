@@ -9,7 +9,7 @@ System requirements
 -------------------
 This tool needs Python2.6 or later to run and has been tested well in Houdini13.0.314 for Mac OSX(Mavericks).
 
-This tool won't deal any thing with local file system, and since it is based on Houdini native ui script, it should be able to work on either Windows or Linux.
+This tool won't deal any thing with local file system, and since it is based on [Houdini ui script](http://www.sidefx.com/docs/hdk13.0/_h_d_k__u_i_native__u_i_script.html), it should be able to work on either Windows or Linux.
 
 How to install?
 ---------------
@@ -28,8 +28,8 @@ chpc.start()
 ```
 One can write a shelf tool button with this code snippet to get a straight forward sense of using it.
 
-How to get it work on my node graph?
-------------------------------------
+How to get it work on my nodes?
+-------------------------------
 Simply just choose a parameter and copy it(to parameter clipboard), then execute this tool.
 
 ![copy_parameter](https://raw.github.com/liberoxp/chpc/master/pic/copy_parameter.png)
@@ -51,4 +51,6 @@ If you left the **New script** text field empty and press **Change** button, ano
 
 ![empty_script](https://raw.github.com/liberoxp/chpc/master/pic/empty_script.png)
 
-**P.S.** The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-executing this tool.
+**PS1** The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-executing this tool.
+
+**PS2** The previous version of this tool is stored at https://code.google.com/p/change-houdini-parameter-callback which is based on PyQt4.
