@@ -4,6 +4,7 @@
 """
 
 import sys, os
+from time import strftime, localtime
 import hou
 
 gUI_FILE = '%s.ui' % os.path.splitext(__file__)[0]
@@ -36,19 +37,22 @@ def cb_btn_change():
     parm = hou.parm(parmPath)
     if parm:
         script = gDIALOG.value('strField_newScript.val')
-        langIdx = gDIALOG.value('menu_lang.val')
+        houLang = gINDEX_TO_HOULANG[gDIALOG.value('menu_lang.val')]
         
         if script:
             # Edit parameter template.
             templ = parm.parmTemplate()
             templ.setScriptCallback(script)
-            templ.setScriptCallbackLanguage(gINDEX_TO_HOULANG[langIdx])
+            templ.setScriptCallbackLanguage(houLang)
 
             # Replace parameter by edited template.
-            parm.node().replaceSpareParmTuple(parm.name(), templ)
-
-            # Update to old script string field.
-            gDIALOG.setValue('strField_oldScript.val', script)
+            parm = parm.node().replaceSpareParmTuple(parm.name(), templ)
+            if parm:
+                print ''
+                print '[chpc - cb_btn_change] Callback information has been updated!'
+                print '[chpc log] %s callback script: %s | %s' % (strftime('%H:%M:%S', localtime()), houLang.name(), script)
+            else:
+                print '[chpc - cb_btn_change] Warning! Can not change callback information!'
         else:
             hou.ui.displayMessage('Empty script, skip writing!', title='Change')
     else:
