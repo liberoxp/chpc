@@ -10,7 +10,7 @@ dlg.gad = DIALOG "Change Parameter Callback Script"
 {
     LAYOUT(vertical) STRETCH MARGIN(0.1) SPACING(0.1) LOOK(plain) PREF_SIZE(15,1) VALUE(dialog.val)
 
-    # Setup gadgets for "Get copied parameter info" button.
+    # Setup gadgets for "Get copied parameter info" button and "Tip01" label.
     {
         LAYOUT(horizontal) HSTRETCH
         {
@@ -24,7 +24,7 @@ dlg.gad = DIALOG "Change Parameter Callback Script"
         } 
     }
    
-    # Setup gadgets for "" labels.
+    # Setup gadgets for "Target parameter" label and string field.
     {
         LAYOUT(horizontal) HSTRETCH
         {
@@ -38,7 +38,7 @@ dlg.gad = DIALOG "Change Parameter Callback Script"
         } 
     }
 
-    # Setup gadgets for old script.
+    # Setup gadgets for "Old script" label and string field.
     {
         LAYOUT(horizontal) HSTRETCH
         {
@@ -53,7 +53,7 @@ dlg.gad = DIALOG "Change Parameter Callback Script"
 
     SEPARATOR;
 
-    # Setup gadgets for new script.
+    # Setup gadgets for "New script" label and string field.
     {
         LAYOUT(horizontal) HSTRETCH
         {
@@ -67,7 +67,7 @@ dlg.gad = DIALOG "Change Parameter Callback Script"
         } 
     }
 
-    # 
+    # Setup gadgets for "Tip02" label.
     {
         LAYOUT(horizontal) HSTRETCH
         {
