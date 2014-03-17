@@ -1,7 +1,7 @@
 CHPC
 ====
 
-**C**hange **H**oudini **P**arameter **C**allback is a tool that allows Houdini user to add/edit/rewrite parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time searching parameter.
+**C**hange **H**oudini **P**arameter **C**allback is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
 
 ![chpc_gui](https://raw.github.com/liberoxp/chpc/master/pic/chpc_main_window.png)
 
@@ -26,11 +26,11 @@ Once this tool can be found in the Python search paths, the simplest way to use 
 import chpc
 chpc.start()
 ```
-One can write a shelf tool button with this code snippet to get a straight forward sense of using it.
+One can write a shelf tool with this code snippet to get a straight forward sense of using it.
 
-How to get it work on my nodes?
+How to use it?
 -------------------------------
-Simply just choose a parameter and copy it(to parameter clipboard), then execute this tool.
+Simply just choose a parameter(may have a callback script written or need to add callback script) and copy it(to parameter clipboard), then execute this tool.
 
 ![copy_parameter](https://raw.github.com/liberoxp/chpc/master/pic/copy_parameter.png)
 
@@ -47,7 +47,7 @@ Once the **New script** text field and the **Language** drop-down menu are all s
 
 ![new_script_and_change_button](https://raw.github.com/liberoxp/chpc/master/pic/new_script_and_change_button.png)
 
-If you left the **New script** text field empty and press **Change** button, another warning message will pop-up. 
+If you left the **New script** text field empty and pressed **Change** button, another warning message will pop-up. 
 
 ![empty_script](https://raw.github.com/liberoxp/chpc/master/pic/empty_script.png)
 
