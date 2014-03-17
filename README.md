@@ -28,7 +28,7 @@ chpc.start()
 ```
 One can write a shelf tool with this code snippet to get a straight forward sense of using it.
 
-How to get it work on my nodes?
+How to use it?
 -------------------------------
 Simply just choose a parameter(may have a callback script written or need to add callback script) and copy it(to parameter clipboard), then execute this tool.
 
