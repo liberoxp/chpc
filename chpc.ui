@@ -76,7 +76,7 @@ dlg.gad = DIALOG "Change Parameter Callback Script"
         }
         {
             LAYOUT(horizontal) JUSTIFY(right,center) HSTRETCH
-        LABEL "Tip02  :  For  continuing  to  setup  another  parameter,  just  copy  the  parameter  press  the  \"Get  parameter  callback  info\"  button  above." HSTRETCH;
+        LABEL "Tip02  :  For  continuing  to  setup  another  parameter,  just  copy  the  parameter  and  press  the  \"Get  parameter  callback  info\"  button  above." HSTRETCH;
         } 
     }
   
