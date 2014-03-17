@@ -28,8 +28,8 @@ chpc.start()
 ```
 One can write a shelf tool button with this code snippet to get a straight forward sense of using it.
 
-How to get it work on my node graph?
-------------------------------------
+How to get it work on my nodes?
+-------------------------------
 Simply just choose a parameter and copy it(to parameter clipboard), then execute this tool.
 
 ![copy_parameter](https://raw.github.com/liberoxp/chpc/master/pic/copy_parameter.png)
