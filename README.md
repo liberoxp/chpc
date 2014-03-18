@@ -9,7 +9,7 @@ System requirements
 -------------------
 This tool needs Python2.6 or later to run and has been tested well in Houdini13.0.314 for Mac OSX(Mavericks).
 
-This tool won't deal any thing with local file system, and since it is based on [Houdini ui script](http://www.sidefx.com/docs/hdk13.0/_h_d_k__u_i_native__u_i_script.html), it should be able to work on either Windows or Linux.
+This tool won't deal any thing with local file system, and since it is based on [HDK ui scripting](http://www.sidefx.com/docs/hdk13.0/_h_d_k__u_i_native__u_i_script.html), it should be able to work on either Windows or Linux.
 
 How to install?
 ---------------
