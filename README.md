@@ -53,4 +53,4 @@ If you left the **New script** text field empty and pressed **Change** button, a
 
 **PS1** The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-executing this tool.
 
-**PS2** The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback)
+**PS2** The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback).
