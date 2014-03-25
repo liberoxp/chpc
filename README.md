@@ -53,7 +53,7 @@ If you left the **New script** text field empty and pressed **Change** button, a
 
 Output Message and Workflow
 ---------------------------
-Once pressing **Change** button, a message will be output on the Python shell. The output message indicates **when** and **which** parameter was changed by **what** kind of information.
+Once pressing **Change** button, a message will be output on the Python shell screen. The output message indicates **when** and **which** parameter was changed by **what** kind of information.
 
 The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-running this tool until it gets you the right result.
 
