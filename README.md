@@ -1,7 +1,7 @@
 CHPC
 ====
 
-**C**hange **H**oudini **P**arameter **C**allback is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
+aka Change Houdini Parameter Callback, is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
 
 ![chpc_gui](https://raw.github.com/liberoxp/chpc/master/pic/chpc_main_window.png)
 
@@ -21,7 +21,7 @@ i.e. $HOME/Library/Preferences/houdini/13.0/scripts/python -- Mac OSX
 
 How to integrate into Houdini environment?
 -----------
-Once this tool can be found in the Python search paths, the simplest way to use it is to open Python shell in Houdini, import **chpc** module, then invoke its **start()** function.
+Once this tool can be found in the Python search paths, user can load it by opening Python shell in Houdini to import **chpc** module, then invoke its **start()** function.
 ```
 import chpc
 chpc.start()
