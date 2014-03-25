@@ -1,7 +1,7 @@
 CHPC
 ====
 
-**C**hange **H**oudini **P**arameter **C**allback is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
+aka Change Houdini Parameter Callback, is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
 
 ![chpc_gui](https://raw.github.com/liberoxp/chpc/master/pic/chpc_main_window.png)
 
@@ -9,7 +9,7 @@ System requirements
 -------------------
 This tool needs Python2.6 or later to run and has been tested well in Houdini13.0.314 for Mac OSX(Mavericks).
 
-This tool won't deal any thing with local file system, and since it is based on [Houdini ui script](http://www.sidefx.com/docs/hdk13.0/_h_d_k__u_i_native__u_i_script.html), it should be able to work on either Windows or Linux.
+This tool won't deal any thing with local file system, and since it is based on [HDK ui scripting](http://www.sidefx.com/docs/hdk13.0/_h_d_k__u_i_native__u_i_script.html), it should be able to work on either Windows or Linux.
 
 How to install?
 ---------------
@@ -21,7 +21,7 @@ i.e. $HOME/Library/Preferences/houdini/13.0/scripts/python -- Mac OSX
 
 How to integrate into Houdini environment?
 -----------
-Once this tool can be found in the Python search paths, the simplest way to use it is to open Python shell in Houdini, import **chpc** module, then invoke its **start()** function.
+Once this tool can be found in the Python search paths, user can load it by opening Python shell in Houdini to import **chpc** module, then invoke its **start()** function.
 ```
 import chpc
 chpc.start()
@@ -53,4 +53,4 @@ If you left the **New script** text field empty and pressed **Change** button, a
 
 **PS1** The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-executing this tool.
 
-**PS2** The previous version of this tool is stored at https://code.google.com/p/change-houdini-parameter-callback which is based on PyQt4.
+**PS2** The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback).
