@@ -59,4 +59,4 @@ The main window will not close after pressing **Change** button, this way you ca
 
 ![output_log](https://raw.githubusercontent.com/liberoxp/chpc/master/pic/output_log.png)
 
-**PS** The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback).
+**PS**. The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback).
