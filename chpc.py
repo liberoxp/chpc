@@ -50,7 +50,7 @@ def cb_btn_change():
             if parm:
                 print ''
                 print '[chpc - cb_btn_change] Callback information has been updated!'
-                print '[chpc log] %s callback script: %s | %s' % (strftime('%H:%M:%S', localtime()), houLang.name(), script)
+                print '[chpc log] %s %s callback script: %s | %s' % (strftime('%H:%M:%S', localtime()), parmPath, houLang.name(), script)
             else:
                 print '[chpc - cb_btn_change] Warning! Can not change callback information!'
         else:
