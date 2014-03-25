@@ -51,6 +51,12 @@ If you left the **New script** text field empty and pressed **Change** button, a
 
 ![empty_script](https://raw.github.com/liberoxp/chpc/master/pic/empty_script.png)
 
-**PS1** The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-executing this tool.
+Output Message and Workflow
+---------------------------
+Once pressing **Change** button, a message will be output on the Python shell. The output message indicates **when** and **which** parameter was changed by **what** kind of information.
 
-**PS2** The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback).
+The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-running this tool until it gets you the right result.
+
+![output_log](https://raw.githubusercontent.com/liberoxp/chpc/master/pic/output_log.png)
+
+**PS** The previous version of this tool (based on PyQt4) is stored at [Google Code](https://code.google.com/p/change-houdini-parameter-callback).
