@@ -46,8 +46,8 @@ def cb_btn_change():
             templ.setScriptCallbackLanguage(houLang)
 
             # Replace parameter by edited template.
-            parm = parm.node().replaceSpareParmTuple(parm.name(), templ)
-            if parm:
+            result = parm.node().replaceSpareParmTuple(parm.name(), templ)
+            if result:
                 print ''
                 print '[chpc - cb_btn_change] Callback information has been updated!'
                 print '[chpc log] %s %s callback script: %s | %s' % (strftime('%H:%M:%S', localtime()), parmPath, houLang.name(), script)
