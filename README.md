@@ -55,7 +55,7 @@ Output Message and Workflow
 ---------------------------
 Once pressing **Change** button, a message will be output on the Python shell screen. The output message indicates **when** and **which** parameter was changed by **what** kind of information.
 
-The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-running this tool until it gets you the right result.
+The main window will not close after pressing **Change** button, this way you can keep on changing callback script without re-running this tool till it gets you the right result.
 
 ![output_log](https://raw.githubusercontent.com/liberoxp/chpc/master/pic/output_log.png)
 
