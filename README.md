@@ -1,7 +1,7 @@
 CHPC
 ====
 
-aka Change Houdini Parameter Callback, is a tool that allows Houdini user to add/edit parameter callback script in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
+aka Change Houdini Parameter Callback, is a tool that allows Houdini user to add/edit callback script of a **spare(extra) parameter** in Python or Hscript directly without opening "Edit Parameter Interface" window and wasting time on searching parameter.
 
 ![chpc_gui](https://raw.github.com/liberoxp/chpc/master/pic/chpc_main_window.png)
 
@@ -30,7 +30,7 @@ One can write a shelf tool with this code snippet to get a straight forward sens
 
 How to use it?
 -------------------------------
-Simply just choose a parameter(may have a callback script written or need to add callback script) and copy it(to parameter clipboard), then execute this tool.
+Simply just choose a **spare parameter**(may have a callback script written or need to add callback script) and copy it(to parameter clipboard), then execute this tool.
 
 ![copy_parameter](https://raw.github.com/liberoxp/chpc/master/pic/copy_parameter.png)
 
