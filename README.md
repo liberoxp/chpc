@@ -28,6 +28,10 @@ chpc.start()
 ```
 One can write a shelf tool with this code snippet to get a straight forward sense of using it.
 
+What kind of parameter can be edit?
+-----------------------------------
+![what_is_spare_parameter](https://raw.githubusercontent.com/liberoxp/chpc/master/pic/what_is_spare_parameter.png)
+
 How to use it?
 -------------------------------
 Simply just choose a **spare parameter**(may have a callback script written or need to add callback script) and copy it(to parameter clipboard), then execute this tool.
