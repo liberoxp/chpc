@@ -59,7 +59,6 @@ def cb_btn_change():
             hou.ui.displayMessage('Empty script, skip writing!', title=title)
     else:
         hou.ui.displayMessage('Invalid parameter path!', title=title)
-  
 
 def cb_btn_getParmCallback():
     '''Callback function called by "Get Parameter Callback info" button.'''
@@ -69,11 +68,9 @@ def cb_btn_getParmCallback():
     # Check if the parameter path is valid or not.
     path = getParmPath()
     if path:
-
         # Check if target parameter is a valid spare parameter of its node.
         parm = hou.parm(path)
         if parm in parm.node().spareParms():
-
             # Target parameter string field.
             gDIALOG.enableValue('strField_tarParm.val', True)
             gDIALOG.setValue('strField_tarParm.val', path)
@@ -94,7 +91,6 @@ def getParmPath():
     '''Function used to get parameter info by checking internal parameter clipboard.'''
     
     contents = hou.parmClipboardContents()
-
     if contents:
         return contents[0].get('path')
     
