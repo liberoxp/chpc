@@ -33,6 +33,8 @@ def start():
 def cb_btn_change():
     '''Callback function called by "Change" button, and "start" function for initialization.'''
     
+    title = 'Get Parameter Callback Info'
+    
     parmPath = gDIALOG.value('strField_tarParm.val')
     parm = hou.parm(parmPath)
     if parm:
@@ -54,9 +56,9 @@ def cb_btn_change():
             else:
                 print '[chpc - cb_btn_change] Warning! Can not change callback information!'
         else:
-            hou.ui.displayMessage('Empty script, skip writing!', title='Change')
+            hou.ui.displayMessage('Empty script, skip writing!', title=title)
     else:
-        hou.ui.displayMessage('Invalid parameter path!', title='Change')
+        hou.ui.displayMessage('Invalid parameter path!', title=title)
   
 
 def cb_btn_getParmCallback():
@@ -64,19 +66,29 @@ def cb_btn_getParmCallback():
     
     title = 'Get Parameter Callback Info'
 
+    # Check if the parameter path is valid or not.
     path = getParmPath()
     if path:
-        # Target parameter string field.
-        gDIALOG.enableValue('strField_tarParm.val', True)
-        gDIALOG.setValue('strField_tarParm.val', path)
-        gDIALOG.enableValue('strField_tarParm.val', False)
 
-        # Old script string field, and language menu item.
-        script, lang = getCallbackInfo(path)
-        gDIALOG.setValue('strField_oldScript.val', script)
-        gDIALOG.setValue('menu_lang.val', gLANG_TO_INDEX[lang])
+        # Check if target parameter is a valid spare parameter of its node.
+        parm = hou.parm(path)
+        if parm in parm.node().spareParms():
+
+            # Target parameter string field.
+            gDIALOG.enableValue('strField_tarParm.val', True)
+            gDIALOG.setValue('strField_tarParm.val', path)
+            #gDIALOG.enableValue('strField_tarParm.val', False)
+
+            # Old script string field, and language menu item.
+            script, lang = getCallbackInfo(path)
+            gDIALOG.setValue('strField_oldScript.val', script)
+            gDIALOG.setValue('menu_lang.val', gLANG_TO_INDEX[lang])
+        else:
+            hou.ui.displayMessage('This parameter is not allow to edit!', title=title)
     else:
         hou.ui.displayMessage('No parameter copied!', title=title)
+
+    gDIALOG.enableValue('strField_tarParm.val', False)
 
 def getParmPath():
     '''Function used to get parameter info by checking internal parameter clipboard.'''
