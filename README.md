@@ -30,7 +30,7 @@ One can write a shelf tool with this code snippet to get a straight forward sens
 
 What kind of parameter can be edit?
 -----------------------------------
-![what_is_spare_parameter]
+![what_is_spare_parameter](https://raw.githubusercontent.com/liberoxp/chpc/master/pic/what_is_spare_parameter.png)
 
 How to use it?
 -------------------------------
