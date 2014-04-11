@@ -5,20 +5,22 @@
 
 import sys, os
 from time import strftime, localtime
+
 import hou
 
-gUI_FILE = '%s.ui' % os.path.splitext(__file__)[0]
-gLANG_TO_INDEX = {'Hscript':0, 'Python':1}
-gINDEX_TO_HOULANG = {0:hou.scriptLanguage.Hscript, 1:hou.scriptLanguage.Python}
-
 global gDIALOG
+
+UI_FILE = '%s.ui' % os.path.splitext(__file__)[0]
+LANG_TO_INDEX = {'Hscript':0, 'Python':1}
+INDEX_TO_HOULANG = {0:hou.scriptLanguage.Hscript, 1:hou.scriptLanguage.Python}
+
 
 def start():
     '''Mian Function.'''
 
     # Parse .ui file.
     global gDIALOG
-    gDIALOG = hou.ui.createDialog(gUI_FILE)
+    gDIALOG = hou.ui.createDialog(UI_FILE)
 
     # Setup gadget callback functions.
     gDIALOG.addCallback('btn_getParmCallback.val', cb_btn_getParmCallback)
@@ -39,7 +41,7 @@ def cb_btn_change():
     parm = hou.parm(parmPath)
     if parm:
         script = gDIALOG.value('strField_newScript.val')
-        houLang = gINDEX_TO_HOULANG[gDIALOG.value('menu_lang.val')]
+        houLang = INDEX_TO_HOULANG[gDIALOG.value('menu_lang.val')]
         
         if script:
             # Edit parameter template.
@@ -79,7 +81,7 @@ def cb_btn_getParmCallback():
             # Old script string field, and language menu item.
             script, lang = getCallbackInfo(path)
             gDIALOG.setValue('strField_oldScript.val', script)
-            gDIALOG.setValue('menu_lang.val', gLANG_TO_INDEX[lang])
+            gDIALOG.setValue('menu_lang.val', LANG_TO_INDEX[lang])
         else:
             hou.ui.displayMessage('This parameter is not allow to edit!', title=title)
     else:
