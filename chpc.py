@@ -10,6 +10,7 @@ import hou
 
 global gDIALOG
 
+UI_TITLE = 'Change Houdini Parameter Callback Script'
 UI_FILE = '%s.ui' % os.path.splitext(__file__)[0]
 LANG_TO_INDEX = {'Hscript':0, 'Python':1}
 INDEX_TO_HOULANG = {0:hou.scriptLanguage.Hscript, 1:hou.scriptLanguage.Python}
@@ -35,8 +36,6 @@ def start():
 def cb_btn_change():
     '''Callback function called by "Change" button, and "start" function for initialization.'''
     
-    title = 'Get Parameter Callback Info'
-    
     parmPath = gDIALOG.value('strField_tarParm.val')
     parm = hou.parm(parmPath)
     if parm:
@@ -58,15 +57,13 @@ def cb_btn_change():
             else:
                 print '[chpc - cb_btn_change] Warning! Can not change callback information!'
         else:
-            hou.ui.displayMessage('Empty script, skip writing!', title=title)
+            hou.ui.displayMessage('Empty script, skip writing!', title=UI_TITLE)
     else:
-        hou.ui.displayMessage('Invalid parameter path!', title=title)
+        hou.ui.displayMessage('Invalid parameter path!', title=UI_TITLE)
 
 def cb_btn_getParmCallback():
     '''Callback function called by "Get Parameter Callback info" button.'''
     
-    title = 'Get Parameter Callback Info'
-
     # Check if the parameter path is valid or not.
     path = getParmPath()
     if path:
@@ -83,9 +80,9 @@ def cb_btn_getParmCallback():
             gDIALOG.setValue('strField_oldScript.val', script)
             gDIALOG.setValue('menu_lang.val', LANG_TO_INDEX[lang])
         else:
-            hou.ui.displayMessage('This parameter is not allow to edit!', title=title)
+            hou.ui.displayMessage('This parameter is not allow to edit!', title=UI_TITLE)
     else:
-        hou.ui.displayMessage('No parameter copied!', title=title)
+        hou.ui.displayMessage('No parameter copied!', title=UI_TITLE)
 
     gDIALOG.enableValue('strField_tarParm.val', False)
 
