@@ -6,7 +6,7 @@ menu_lang.val = SELECT_MENU
     "Python"
 }
 
-dlg.gad = DIALOG "Change Parameter Callback Script"
+dlg.gad = DIALOG "Change Houdini Parameter Callback Script"
 {
     LAYOUT(vertical) STRETCH MARGIN(0.1) SPACING(0.1) LOOK(plain) PREF_SIZE(15,1) VALUE(dialog.val)
 
